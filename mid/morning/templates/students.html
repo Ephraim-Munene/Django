@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>students list</h2>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Phone number</td>
+        <td>Email</td>
+    </tr>
+
+    {% for t in dents %}
+    <tr>
+        <td>{{ t.name }}</td>
+        <td>{{ t.phone_number }}</td>
+        <td>{{ t.email }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+</body>
+</html>
